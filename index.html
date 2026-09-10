@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Opening screen -->
+    <div class="loader" id="loader">
+        <div class="opening-card">
+            <div class="gift-icon">🎁</div>
+            <p class="opening-small">A little surprise for</p>
+            <h1 id="opening-name">You</h1>
+            <p class="opening-text">I made something special for you...</p>
+            <button id="play" class="surprise-btn">Open Your Surprise ✨</button>
+        </div>
+    </div>
+
+    <audio class="song" controls loop>
+        <source src="music2.mp3" type="audio/mpeg">
+    </audio>
+
+    <canvas id="confetti"></canvas>
+
+    <main class="main">
+        <!-- Birthday hero -->
+        <section class="hero-section">
+            <div class="hero-glow"></div>
+            <div class="container">
+                <img src="img/banner.png" class="birthday-banner" alt="Birthday decoration">
+                <div id="name" class="area">Anshika</div>
+
+                <div class="type-wrap">
+                    <div id="typed-strings" class="typing">
+                        <h2>Happy Birthday <i id="nae">Anshika</i> ❤️</h2>
+                        <h2>Have a wonderful day ✨</h2>
+                        <h2>Filled with joy and happiness.</h2>
+                    </div>
+                    <span id="typed"></span>
+                </div>
+
+                <div class="cake-wrap">
+                    <img src="img/cake.gif" class="cake-img" alt="Birthday cake">
+                    <p class="cake-caption">Make a wish... 🎂</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memories -->
+        <section class="memories-section" id="memories">
+            <div class="section-heading">
+                <span>✨</span>
+                <h2>Some Memories</h2>
+                <p>A few things worth remembering ❤️</p>
+            </div>
+
+            <div class="memory-showcase">
+                <button class="gallery-btn prev" id="prevPhoto" aria-label="Previous photo">‹</button>
+                <div class="memory-frame">
+                    <div class="memory-photo-wrap">
+                        <img id="memoryPhoto" src="img/memory-1.png" alt="Memory">
+                    </div>
+                    <div class="memory-caption">
+                        <span id="memoryNumber">01 / 05</span>
+                        <h3 id="memoryTitle">A little memory ✨</h3>
+                        <p id="memoryText">Some moments are simply worth keeping.</p>
+                    </div>
+                </div>
+                <button class="gallery-btn next" id="nextPhoto" aria-label="Next photo">›</button>
+            </div>
+
+            <div class="dots" id="dots" aria-label="Photo navigation"></div>
+        </section>
+
+        <!-- Personal note -->
+        <section class="message-section">
+            <div class="message-card">
+                <div class="heart">♥</div>
+                <p class="eyebrow">A little something I wanted to say...</p>
+                <div class="personal-message" id="personalMessage"></div>
+            </div>
+        </section>
+
+        <!-- Final surprise -->
+        <section class="final-section">
+            <p class="wait-text">That's all... or is it?</p>
+            <button id="lastThing" class="last-btn">One Last Thing 👀</button>
+            <div id="finalReveal" class="final-reveal">
+                <div class="firework">🎉</div>
+                <h2>HAPPY BIRTHDAY <span id="final-name">YOU</span>! ❤️</h2>
+                <p>Hope your day is as awesome as you are.</p>
+            </div>
+        </section>
+
+        <footer>Made with ❤️ just for you</footer>
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border" alt="Balloons">
+    </main>
+
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
