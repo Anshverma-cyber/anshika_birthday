@@ -8,21 +8,17 @@ body {
     overflow-x: hidden;
 }
 .scroll-cue {
-    position: absolute;
-    left: 50%;
-    bottom: 22px;
-    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2px;
+    margin-top: 12px;
     color: #9f3d50;
     text-decoration: none;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
-    opacity: .82;
-    z-index: 5;
+    opacity: 0.82;
     animation: scrollCue 1.6s ease-in-out infinite;
 }
 
@@ -38,12 +34,12 @@ body {
 
 @keyframes scrollCue {
     0%, 100% {
-        transform: translate(-50%, 0);
-        opacity: .65;
+        transform: translateY(0);
+        opacity: 0.65;
     }
 
     50% {
-        transform: translate(-50%, 7px);
+        transform: translateY(7px);
         opacity: 1;
     }
 }
@@ -174,9 +170,13 @@ footer { text-align: center; padding: 0 20px 45px; color: #9b7880; font-size: 13
 
 @media (max-width: 600px) {
     .scroll-cue {
-    bottom: 14px;
-    font-size: 12px;
-}
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .scroll-arrow {
+        font-size: 24px;
+    }
     .hero-section { min-height: 690px; padding-top: 40px; }
     .memory-showcase { gap: 6px; }
     .gallery-btn { flex-basis: 42px; width: 42px; height: 42px; font-size: 32px; }
